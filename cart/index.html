@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Прототип страницы оплаты банковской картой</title>
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<h2>Оплата банковской картой</h2>
+	<div class="content">
+		<form action="" method="POST" id="myForm">
+			<div>
+				<input id="name" type="text" placeholder="Имя"">
+			</div>
+			<div>
+				<input id="code" type="text" placeholder="Номер карты" name="code" onblur="validateCode(this);">
+			</div>
+			<div>
+				<input id="" type="date" value="2018-07-22">
+				<input id="cv" type="text" placeholder="CVV код" name="cv" size="12" onblur="validateCode(this);">
+			</div>
+			<div>
+				<input id="sum" type="text" placeholder="Сумма" name="sum" onblur="validateCode(sum, helpText);">
+			</div>
+				<button type="submit" name="submit" id="submit" onclick="formSubmit(this.form)"> Оплатить </button>
+				<p id="helpText" name="message-help"></p>
+		</form>
+	</div>
+</div>
+ </body>
+</html>   
+    
