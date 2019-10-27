@@ -31,7 +31,6 @@
 		width: 28px;
 		height: 2px;
 		background: #222;
-		
 	}
 	.menu-btn span::before, 
 	.menu-btn span::after {
@@ -61,22 +60,22 @@
 	
 </style>
 </head>
-<body>
-	<div class="section">
-		<a href="#" class="menu-btn">
-			<span></span>
-		</a>
-	</div>
-	<script>
+	<body>
+		<div class="section">
+			<a href="#" class="menu-btn">
+				<span></span>
+			</a>
+		</div>
+		<script>
 		
-		var menuBtn = document.querySelector('.menu-btn');
-			menuBtn.onclick  = function init(e) {
-			e.preventDefault();
-			this.classList.toggle("menu-btn-active");
+			var menuBtn = document.querySelector('.menu-btn');
+				menuBtn.onclick  = function init(e) {
+				e.preventDefault();
+				this.classList.toggle("menu-btn-active");
 
-		};
+			};
 		
-	</script>
- </body>
+		</script>
+	</body>
 </html>   
     
