@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Меню гамбургер</title>
+<style>
+	body {
+		margin: 0;
+	}
+	.section {
+		height: 100vh;
+		background: blue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu-btn {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background: white;
+		position: relative;
+	}
+	.menu-btn span,
+	.menu-btn span::before, 
+	.menu-btn span::after 	{
+		position: absolute;
+		top: 25px;
+		left: 10px;
+		width: 28px;
+		height: 2px;
+		background: #222;
+		
+	}
+	.menu-btn span::before, 
+	.menu-btn span::after {
+		content: '';
+		display: block;
+		transition: 0.5s;
+	}
+	.menu-btn span::before {
+		left: 0px;
+		transform: translateY(-17px);
+	}
+	.menu-btn span::after {
+		left: 0px;
+		transform: translateY(-33px);
+	}
+	.menu-btn-active span {
+		height: 0;
+	}
+	.menu-btn-active span::before  {
+		transform: rotate(15deg);
+		top: 1px;
+	}
+	.menu-btn-active span::after  {
+		transform: rotate(-15deg);
+		top: 1px;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="section">
+		<a href="#" class="menu-btn">
+			<span></span>
+		</a>
+	</div>
+	<script>
+		
+		var menuBtn = document.querySelector('.menu-btn');
+			menuBtn.onclick  = function init(e) {
+			e.preventDefault();
+			this.classList.toggle("menu-btn-active");
+
+		};
+		
+	</script>
+ </body>
+</html>   
+    
