@@ -28,7 +28,7 @@ input:active, input:focus  {
 	border: none;
 	outline: none;
 	outline: 0;
-    outline-offset: 0;
+    	outline-offset: 0;
 	box-shadow: none;
 }
 button {
