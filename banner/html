@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Рисование баннера</title>
+<style>
+.bun {
+	width: 240px;
+	height: 400px;
+	background-color: #faebd7;
+	background-image: url('fon.jpg');
+	overflow: hidden;
+}
+.bun h2 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ff8e0d;
+	padding-bottom: 7px;
+	margin: 0;
+	animation: delayed-fade-animation 10s 2s ease-in-out; /* Появление h2 */
+	animation-iteration-count:  infinite;
+}
+.bun img {
+	width: 80px;
+	text-align: center;
+	display: block;
+	padding: 0 auto;
+	margin: 0 auto;
+	animation: fade-animation 10s 2s ease-in-out; /* Появление logo */
+	animation-iteration-count: infinite;
+}
+.bun .base-img {
+	width: 290px;
+	box-shadow: 0px 0px 6px #663800;
+	border-bottom: 2px solid #ffba66;
+	animation: fadeInDown 10s 2s ease-in-out; /* Появление img */
+	animation-iteration-count: infinite;
+}
+.fon-bottom {
+	background: #ff8e0d;
+	width: 240px;
+	height: 130px;
+}
+.bun p {
+	text-align: center;
+	padding: 0;
+	padding-top: 10px;
+	margin: 0;
+}
+@keyframes delayed-fade-animation {
+    0%   {opacity: 0;}
+	40%   {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-animation {
+    0%   {opacity: 0;}
+	40%   {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fadeInDown {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   40% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+@keyframes fadeOutUp {
+   0% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+   100% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+} 
+</style>
+</head>
+<body bgcolor="#f5deb3">
+<div class="bun">
+<img src="Level-Logo.png">
+<h2>Строительная компания</h2>
+<img class="base-img im-1" src="level-3.jpg">
+<div class="fon-bottom">
+<p><b>Строительство «под ключ»</b><br>
+от 13 500 руб/метр</p>
+</div>
+</div>
+</body>
+</html>
